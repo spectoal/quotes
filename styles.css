@@ -1,0 +1,12 @@
+main {
+
+background: red;
+width: 100w;
+height: 100vw;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
