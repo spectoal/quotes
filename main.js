@@ -1,5 +1,8 @@
-const quoteArr = [{
-
+const quoteArr = [
+{
+    text: "With great power, comes great responsibility",
+    author: "Uncle Ben"
+}, {
     text: "I am Ironman.",
     author: "Tony Stark" 
 }, {
@@ -32,7 +35,14 @@ const quoteArr = [{
 }, {
     text: "No mistakes. No do-overs. Look out for eachother. This is the fight of our lives.",
     author: "Cap"
-}
+}, {
+    text: "filler example.",
+    author: "me"
+}, {
+    text: "filler example2.",
+    author: "me"
+}, 
+
 
 ];
 
@@ -42,11 +52,18 @@ function generate() {
 let ranNum = Math.floor(Math.random() * quoteArr.length);
 console.log(quoteArr);
 
-let backClass = Math.floor(Math.random() * 10) + 1;
-let background = document.querySelector('main');
+// i dont understand what that background class is for ?? ask him 
+// take it out bc it works without it, generate the random arr length 
+
+//let backClass = Math.floor(Math.random() * 10) + 1;
+//let background = document.querySelector('main');
 document.querySelector("blockquote").innerText = quoteArr[ranNum].text;
 document.querySelector("cite").innerText = quoteArr[ranNum].author;
+};
 
+const button = document.querySelector('button');
+
+/*
 if (backClass == 1) {
     background.setAttribute('class', '');
     background.classList.add('one');
@@ -78,9 +95,4 @@ if (backClass == 1) {
     background.setAttribute('class', '');
     background.classList.add('ten');
 };
-};
-
-const button = document.querySelector('button');
-
-
- // end of the entire function
+*/
