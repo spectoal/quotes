@@ -1,48 +1,59 @@
 const quoteArr = [
 {
-    text: "With great power, comes great responsibility",
-    author: "Uncle Ben"
+    text: "WITH GREAT POWER COMES GREAT RESPONSIBILITY",
+    author: "-Uncle Ben"
 }, {
-    text: "I am Ironman.",
-    author: "Tony Stark" 
+    text: "I AM IRONMAN.",
+    author: "-Tony Stark" 
 }, {
-    text: "I can do this all day.",
-    author: "Steve Rodgers"
+    text: "I CAN DO THIS ALL DAY.",
+    author: "-Steve Rogers"
 }, {
-    text: "Thats my secret Cap, Im always angry.",
-    author: "Bruce Banner"
+    text: "THATS MY SECRET CAP, IM ALWAYS ANGRY.",
+    author: "-Bruce Banner"
 }, {
-    text: "None of this makes sense, but Im going back out there because its my job.",
-    author: "Hawkeye"
+    text: "NONE OF THIS MAKES SENCE, BUT IM GOING BACK OUT THERE BECAUSE ITS MY JOB.",
+    author: "-Hawkeye"
 }, {
-    text: "Im here to pick up a fossil.",
-    author: "Black Widow"
+    text: "IM HERE TO PICK UP A FOSSIL.",
+    author: "-Black Widow"
 }, {
     text: "ANOTHER!!.",
-    author: "Thor Odinson"
+    author: "-Thor Odinson"
 }, {
-    text: "Love is a dagger.",
-    author: "Loki"
+    text: "LOVE IS A DAGGER.",
+    author: "-Loki"
 }, {
-    text: "I dont need you to tell me who I am.",
-    author: "Wanda"
+    text: "I DONT NEED YOU TO TELL ME WHO I AM.",
+    author: "-Wanda"
 }, {
-    text: "Maybe he was wrong about you, and if he was wrong about you, then  maybe he was wrong about me.",
-    author: "Bucky Barnes"
+    text: "MAYBE HE WAS WRONG ABOUT YOU, AND IF HE WAS WRONG ABOUT YOU, THEN MAYBE HE WAS WRONG ABOUT ME.",
+    author: "-Bucky Barnes"
 }, {
-    text: "I am inevitable.",
-    author: "Thanos"
+    text: "I AM INEVITABLE.",
+    author: "-Thanos"
 }, {
-    text: "No mistakes. No do-overs. Look out for eachother. This is the fight of our lives.",
-    author: "Cap"
+    text: "NO MISTAKES. NO DO-OVERS. LOOK OUT FOR EACHOTHER. THIS IS THE FIGHT OF OUR LIVES.",
+    author: "-Cap"
 }, {
-    text: "filler example.",
-    author: "me"
+    text: "ITS AN IMPERFECT WORLD, BUT ITS THE ONLY ONE WE'VE GOT.",
+    author: "-Tony Stark"
 }, {
-    text: "filler example2.",
-    author: "me"
-}, 
-
+    text: "I WOULD RATHER BE A GOOD MAN THAN A GREAT KING.",
+    author: "-Thor Odinson"
+}, {
+    text: "IM MARRY POPPINS YALL.",
+    author: "-Yondu"
+}, {
+    text: "I HAVE NOTHING TO PROVE TO YOU.",
+    author: "-Carol Danvers"
+}, {
+    text: "YOU GET HURT, HURT EM BACK. YOU GET KILLED, WALK IT OFF.",
+    author: "-Steve Rogers"
+}, {
+    text: "AS FAR AS IM CONCERNED, THATS AMERICAS ASS.",
+    author: "-Scott Lang"
+}
 
 ];
 
@@ -52,18 +63,18 @@ function generate() {
 let ranNum = Math.floor(Math.random() * quoteArr.length);
 console.log(quoteArr);
 
-// i dont understand what that background class is for ?? ask him 
-// take it out bc it works without it, generate the random arr length 
-
-//let backClass = Math.floor(Math.random() * 10) + 1;
-//let background = document.querySelector('main');
 document.querySelector("blockquote").innerText = quoteArr[ranNum].text;
 document.querySelector("cite").innerText = quoteArr[ranNum].author;
 };
 
 const button = document.querySelector('button');
 
-/*
+/* make diff random backgrounds(images?)
+
+//let backClass = Math.floor(Math.random() * 10) + 1;
+//let background = document.querySelector('main');
+
+
 if (backClass == 1) {
     background.setAttribute('class', '');
     background.classList.add('one');

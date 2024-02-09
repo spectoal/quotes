@@ -1,12 +1,75 @@
-main {
+@font-face{
+    font-family: "marvel";
+    src: url(fonts/marvel-font/MarvelRegular-Dj83.ttf);
+}
+@font-face {
+    font-family: "avenger";
+    src: url(fonts/avengeance-font/Avengeance-YolO.ttf);
+}
 
-background: red;
-width: 100vw;
-height: 100vw;
 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+body {
+    height: 100%;
+    margin: 0;
+}
 
+main  {
+
+    background: red;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+section { 
+
+    font-family: "marvel";
+    font-size: 3rem;
+    color:rgb(235, 235, 235);
+
+    width: 50%;
+    
+    padding: 1rem 4rem 2rem 5rem;
+  
+    background: rgba(35, 35, 35, 0.2);
+    border: 5px dotted rgba(0, 0, 0, 0.2);
+
+    position: relative;
+
+    flex-direction: column;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    section{
+        max-width: 98%;
+    }
+}
+
+
+section cite {
+    color: rgb(20, 20, 20);
+    font-size: 2rem;
+}
+section button {
+
+    font-family: "avenger";
+    font-size: 1rem;
+
+    padding: .7rem 0 .5rem 0;
+    width: 100px;
+    margin: 2rem auto 0 auto;
+    
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
